@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskMate LMS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">TaskMate</h2>
+    <ul>
+      <li class="active"><i class="fa-solid fa-house"></i> Dashboard</li>
+      <li><i class="fa-solid fa-book"></i> Mata Kuliah</li>
+      <li><i class="fa-solid fa-list-check"></i> Tugas</li>
+      <li><i class="fa-solid fa-bell"></i> Notifikasi</li>
+      <li><i class="fa-solid fa-user"></i> Profil</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <header class="header">
+      <h1>Dashboard</h1>
+      <span class="user">👨‍🎓 Mahasiswa</span>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="card">
+        <h3>📚 Mata Kuliah</h3>
+        <p>6</p>
+      </div>
+      <div class="card">
+        <h3>📝 Tugas Aktif</h3>
+        <p>4</p>
+      </div>
+      <div class="card danger">
+        <h3>⏰ Deadline Dekat</h3>
+        <p>2</p>
+      </div>
+    </section>
+
+    <!-- TASK LIST -->
+    <section class="tasks">
+      <h2>Tugas Terdekat</h2>
+
+      <div class="task">
+        <span>UI/UX Design</span>
+        <small>Deadline: 10 Jan 2026</small>
+      </div>
+
+      <div class="task">
+        <span>Jaringan Komputer</span>
+        <small>Deadline: 12 Jan 2026</small>
+      </div>
+
+      <div class="task late">
+        <span>Basis Data</span>
+        <small>Deadline: 8 Jan 2026</small>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
