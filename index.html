@@ -14,55 +14,118 @@
   <aside class="sidebar">
     <h2 class="logo">TaskMate</h2>
     <ul>
-      <li class="active"><i class="fa-solid fa-house"></i> Dashboard</li>
-      <li><i class="fa-solid fa-book"></i> Courses</li>
-      <li><i class="fa-solid fa-list-check"></i> Assignments</li>
-      <li><i class="fa-solid fa-bell"></i> Notifications</li>
-      <li><i class="fa-solid fa-user"></i> Profile</li>
+      <li class="active" data-page="dashboard"><i class="fa-solid fa-house"></i> Dashboard</li>
+      <li data-page="courses"><i class="fa-solid fa-book"></i> Courses</li>
+      <li data-page="assignments"><i class="fa-solid fa-list-check"></i> Assignments</li>
+      <li data-page="notifications"><i class="fa-solid fa-bell"></i> Notifications</li>
+      <li data-page="profile"><i class="fa-solid fa-user"></i> Profile</li>
     </ul>
   </aside>
 
   <!-- MAIN CONTENT -->
   <main class="main">
 
-    <header class="header">
-      <h1>Dashboard</h1>
-      <span class="user">👨‍🎓 Student</span>
-    </header>
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="page active">
+      <header class="header">
+        <h1>Dashboard</h1>
+        <span class="user">👨‍🎓 Student</span>
+      </header>
 
-    <!-- STATS -->
-    <section class="stats">
+      <section class="stats">
+        <div class="card">
+          <h3>📚 Courses</h3>
+          <p>6</p>
+        </div>
+        <div class="card">
+          <h3>📝 Active Assignments</h3>
+          <p>4</p>
+        </div>
+        <div class="card danger">
+          <h3>⏰ Upcoming Deadlines</h3>
+          <p>2</p>
+        </div>
+      </section>
+
+      <section class="tasks">
+        <h2>Upcoming Assignments</h2>
+
+        <div class="task">
+          <span>UI/UX Design</span>
+          <small>Deadline: January 10, 2026</small>
+        </div>
+
+        <div class="task">
+          <span>Computer Networks</span>
+          <small>Deadline: January 12, 2026</small>
+        </div>
+
+        <div class="task late">
+          <span>Database Systems</span>
+          <small>Deadline: January 8, 2026</small>
+        </div>
+      </section>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="page">
+      <header class="header">
+        <h1>Courses</h1>
+      </header>
+
       <div class="card">
-        <h3>📚 Courses</h3>
-        <p>6</p>
+        <h3>Computer Networks</h3>
+        <p>3 Assignments</p>
       </div>
+
       <div class="card">
-        <h3>📝 Active Assignments</h3>
-        <p>4</p>
-      </div>
-      <div class="card danger">
-        <h3>⏰ Upcoming Deadlines</h3>
-        <p>2</p>
+        <h3>Database Systems</h3>
+        <p>2 Assignments</p>
       </div>
     </section>
 
-    <!-- TASK LIST -->
-    <section class="tasks">
-      <h2>Upcoming Assignments</h2>
+    <!-- ASSIGNMENTS -->
+    <section id="assignments" class="page">
+      <header class="header">
+        <h1>Assignments</h1>
+      </header>
 
       <div class="task">
-        <span>UI/UX Design</span>
-        <small>Deadline: January 10, 2026</small>
-      </div>
-
-      <div class="task">
-        <span>Computer Networks</span>
-        <small>Deadline: January 12, 2026</small>
+        <span>UI/UX Final Project</span>
+        <small>Status: In Progress</small>
       </div>
 
       <div class="task late">
-        <span>Database Systems</span>
-        <small>Deadline: January 8, 2026</small>
+        <span>Database Report</span>
+        <small>Status: Overdue</small>
+      </div>
+    </section>
+
+    <!-- NOTIFICATIONS -->
+    <section id="notifications" class="page">
+      <header class="header">
+        <h1>Notifications</h1>
+      </header>
+
+      <div class="task">
+        <span>Assignment Deadline Tomorrow</span>
+      </div>
+
+      <div class="task">
+        <span>New Course Material Uploaded</span>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="page">
+      <header class="header">
+        <h1>Profile</h1>
+      </header>
+
+      <div class="card">
+        <p><strong>Name:</strong> Student Name</p>
+        <p><strong>Student ID:</strong> 12345678</p>
+        <p><strong>Major:</strong> Informatics</p>
       </div>
     </section>
 
