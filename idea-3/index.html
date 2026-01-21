@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UniSpend – Student Budget Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <h1 class="logo">UniSpend</h1>
+      <ul>
+        <li class="active" data-page="dashboard">Dashboard</li>
+        <li data-page="expenses">Expenses</li>
+        <li data-page="budget">Budget</li>
+        <li data-page="reports">Reports</li>
+        <li data-page="profile">Profile</li>
+      </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="container">
+      <!-- DASHBOARD -->
+      <section id="dashboard" class="page active">
+        <h2>Monthly Overview</h2>
+
+        <div class="cards">
+          <div class="card">
+            <p>Total Budget</p>
+            <h3>Rp 2,000,000</h3>
+          </div>
+          <div class="card">
+            <p>Total Spent</p>
+            <h3>Rp 1,250,000</h3>
+          </div>
+          <div class="card danger">
+            <p>Remaining</p>
+            <h3>Rp 750,000</h3>
+          </div>
+        </div>
+
+        <div class="note">
+          <p>
+            You are doing well. Keep your spending under control to avoid
+            running out of money before month-end.
+          </p>
+        </div>
+      </section>
+
+      <!-- EXPENSES -->
+      <section id="expenses" class="page">
+        <h2>Daily Expenses</h2>
+
+        <div class="expense-item">
+          <span>Food & Drinks</span>
+          <span>Rp 50,000</span>
+        </div>
+        <div class="expense-item">
+          <span>Transportation</span>
+          <span>Rp 20,000</span>
+        </div>
+        <div class="expense-item">
+          <span>Internet</span>
+          <span>Rp 75,000</span>
+        </div>
+      </section>
+
+      <!-- BUDGET -->
+      <section id="budget" class="page">
+        <h2>Monthly Budget Planning</h2>
+
+        <div class="card">
+          <p>Set Monthly Budget</p>
+          <h3>Rp 2,000,000</h3>
+        </div>
+
+        <div class="card">
+          <p>Daily Spending Limit</p>
+          <h3>Rp 65,000</h3>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section id="reports" class="page center">
+        <h2>Monthly Expense Report</h2>
+
+        <div class="report-wrapper">
+          <div class="pie-chart"></div>
+
+          <div class="legend">
+            <div><span class="dot food"></span> Food (40%)</div>
+            <div><span class="dot transport"></span> Transport (25%)</div>
+            <div><span class="dot internet"></span> Internet (15%)</div>
+            <div><span class="dot others"></span> Others (20%)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section id="profile" class="page">
+        <h2>Student Profile</h2>
+
+        <div class="card">
+          <p><strong>Name:</strong> Student Name</p>
+          <p><strong>Monthly Allowance:</strong> Rp 2,000,000</p>
+          <p><strong>Saving Goal:</strong> Rp 500,000</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ParkEase – Smart Campus Parking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">ParkEase</h2>
+    <ul>
+      <li class="active" data-page="dashboard"><i class="fa-solid fa-map"></i> Dashboard</li>
+      <li data-page="parking"><i class="fa-solid fa-square-parking"></i> Parking Areas</li>
+      <li data-page="availability"><i class="fa-solid fa-chart-pie"></i> Availability</li>
+      <li data-page="notifications"><i class="fa-solid fa-bell"></i> Alerts</li>
+      <li data-page="profile"><i class="fa-solid fa-user"></i> Profile</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="page active">
+      <header class="header">
+        <h1>Campus Parking Overview</h1>
+        <span class="user">🚗 Student Driver</span>
+      </header>
+
+      <section class="stats">
+        <div class="card">
+          <h3>Total Parking Areas</h3>
+          <p>5</p>
+        </div>
+        <div class="card">
+          <h3>Available Slots</h3>
+          <p>42</p>
+        </div>
+        <div class="card warning">
+          <h3>Peak Hour Zones</h3>
+          <p>2</p>
+        </div>
+      </section>
+
+      <section class="info">
+        <h2>Today's Status</h2>
+        <p>Parking activity is currently <strong>moderate</strong>. Some areas may be crowded during class hours.</p>
+      </section>
+    </section>
+
+    <!-- PARKING AREAS -->
+    <section id="parking" class="page">
+      <header class="header">
+        <h1>Parking Areas</h1>
+      </header>
+
+      <div class="card">
+        <h3>Main Campus Lot</h3>
+        <p>Status: Available</p>
+      </div>
+
+      <div class="card warning">
+        <h3>Engineering Building</h3>
+        <p>Status: Almost Full</p>
+      </div>
+
+      <div class="card danger">
+        <h3>Library Parking</h3>
+        <p>Status: Full</p>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section id="availability" class="page">
+      <header class="header">
+        <h1>Parking Availability</h1>
+      </header>
+
+      <div class="slot available">Available Slot</div>
+      <div class="slot available">Available Slot</div>
+      <div class="slot busy">Occupied Slot</div>
+      <div class="slot busy">Occupied Slot</div>
+    </section>
+
+    <!-- NOTIFICATIONS -->
+    <section id="notifications" class="page">
+      <header class="header">
+        <h1>Alerts</h1>
+      </header>
+
+      <div class="alert">
+        Parking area near Library is currently full.
+      </div>
+
+      <div class="alert">
+        Main Campus Lot has new available slots.
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="page">
+      <header class="header">
+        <h1>User Profile</h1>
+      </header>
+
+      <div class="card">
+        <p><strong>Name:</strong> Student Name</p>
+        <p><strong>Vehicle:</strong> Motorcycle</p>
+        <p><strong>Campus ID:</strong> 20231234</p>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
